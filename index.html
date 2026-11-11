@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나랑 딱 맞는 은퇴견 짝꿍 찾기 🐾</title>
+
+    <!-- Open Graph (OG) Tags -->
+    <meta property="og:title" content="은퇴견 입양 짝궁찾기">
+    <meta property="og:description" content="나에게 맞는 은퇴견을 찾아줘요.">
+    <meta property="og:image" content="https://vibe2-seven-nu.vercel.app/og.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://vibe2-seven-nu.vercel.app/og.png">
+
     <style>
         * {
             box-sizing: border-box;
@@ -702,6 +711,7 @@
             const container = document.getElementById('resultsContainer');
             container.innerHTML = '';
 
+            topDogs.forEach((idx, i) => {}); // placeholder guard
             topDogs.forEach((dog, idx) => {
                 const card = document.createElement('div');
                 card.className = 'card';
